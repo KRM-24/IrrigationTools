@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+	<head>
+		<title>StreamLine I.T.</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {width: 40%;}
+</style>
+	<body>
+		<div id="header">
+			<h1>Twin Loups Home</h1>
+		</div>
+		
+		<table>
+			<thead>Database Design</thead>
+			<th>Section</th><th>ObservationWell</th><th>ObservationMeasurement</th>
+			<tr><td>SectionID</td><td>ObservationWellID</td><td>ObservationMeasurementID</td></tr>
+			<tr><td>Coordinate</td><td>WellDesignation</td><td>ObservationWellID</td></tr>
+			<tr><td>SortOrder</td><td>Description</td><td>ObservationDate</td></tr>
+			<tr><td></td><td>SectionID</td><td>Measurement</td></tr>
+			<tr><td></td><td>StickUp</td><td>Description</td></tr>
+			<tr><td></td><td>Elevation</td><td></td></tr>
+			<tr><td></td><td>SortOrder</td><td></td></tr>
+		</table>
+		
+		<br/>
+		
+		<h3>Bulk Entry by Section Coordinates</h3>
+		<form>
+			<div class="container">
+				<div class="form-group-row">
+					<div class="col-xs-3"><label>Choose a Year</label></div>
+					<div class="col-xs-2 col-xs-offset-3"><input class="btn" type="button" value="2017" ></div>
+					<div class="col-xs-2"><input class="btn disabled" type="button" value="2018" ></div>
+					<div class="col-xs-2"><input class="btn" type="button" value="2019" ></div>
+				</div>
+				<div class="form-group-row">
+					<div class="col-xs-3"><label>Choose a Month</label></div>
+					<div class="col-xs-2 col-xs-offset-3"><input class="btn" type="button" value="July" ></div>
+					<div class="col-xs-2"><input class="btn disabled" type="button" value="August" ></div>
+					<div class="col-xs-2"><input class="btn" type="button" value="September" ></div>
+				</div>
+				<div class="form-group-row">
+					<label>Choose a Section</label>
+					<select class="selectpicker">
+						<option>T15N,R10W</option>
+						<option>T15N,R9W</option>
+						<option>T15N,R8W</option>
+						<option>T15N,R7W</option>
+					</select>
+				</div>
+				<div class="form-group row">
+					<div class="col-xs-3">
+						<label>Well Designation</label>
+						<input class="form-control" type="text" />
+					</div>
+					<div class="col-xs-2">
+						<label>Stick Up</label>
+						<input class="form-control" type="text" />
+					</div>
+					<div class="col-xs-3">
+						<label>Elevation</label>
+						<input class="form-control" type="text" />
+					</div>
+					<div class="col-xs-2">
+						<label>Day</label>
+						<input class="form-control" type="text" />
+					</div>
+					<div class="col-xs-2">
+						<label>Reading</label>
+						<input class="form-control" type="text" />
+					</div>
+				</div>
+			</div>
+		</form>
+		
+		<div id="footer">Streamline I.T. created by MagnineWorkSpace, LLC</div>
+		
+	</body>
+</html>		
